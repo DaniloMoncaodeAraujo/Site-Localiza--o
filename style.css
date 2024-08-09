@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.7s linear;
+}
+
+header {
+    margin: 0 0 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: #161A49;
+        font-family: "Poppins", sans-serif;
+    }
+
+    a:hover{
+        cursor: pointer;
+        font-size: 1.4rem;
+        transition: 0.4s linear;
+        color: #6FBF44;
+    }
+
+    button {
+        background-color: #6FBF44;
+        color: #ffffff;
+        font-size: 1.3rem;
+        border: none;
+        padding: 0.6rem;
+        border-radius: 1rem;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #161A49;
+        transition: 0.5s linear;
+        font-size: 1.4rem;
+    }
+
+}
+
+section {
+    display: flex;
+    margin: 3rem 0 0 3rem;
+
+    img{
+        animation: moverfoto 3s infinite alternate ease-in-out;
+        
+    }
+   
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+
+        h1{
+            margin-top: 4.5rem;
+            color: #161A49;
+            font-size: 4.4rem;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+
+        p{
+            color: #4B505A;
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            margin: 2rem 0 3.5rem 0;
+        }
+
+        button{
+        background-color: #ffffff;
+            color: #6FBF44;
+            border: none;
+            font-size: 1.6rem;
+            text-align: start;
+            width: 10rem;
+            text-align: center;
+        }
+
+        button:hover{
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 500;
+            transition: 0.6s linear;
+            background-color: #6FBF44;
+            border-radius: 2.5rem;
+            padding: 0.2rem;
+
+        }
+    }
+}
+
+@keyframes moverfoto {
+    from{
+       transform: translate(-4%, -4%) rotate(-4deg);
+    }
+   }
