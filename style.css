@@ -19,10 +19,10 @@ header {
         font-family: "Poppins", sans-serif;
     }
 
-    a:hover{
+    a:hover {
         cursor: pointer;
         font-size: 1.4rem;
-        transition: 0.4s linear;
+        transition: 0.7s linear;
         color: #6FBF44;
     }
 
@@ -35,10 +35,10 @@ header {
         border-radius: 1rem;
     }
 
-    button:hover{
+    button:hover {
         cursor: pointer;
         background-color: #161A49;
-        transition: 0.5s linear;
+        transition: 0.7s linear;
         font-size: 1.4rem;
     }
 
@@ -48,17 +48,17 @@ section {
     display: flex;
     margin: 3rem 0 0 3rem;
 
-    img{
+    img {
         animation: moverfoto 3s infinite alternate ease-in-out;
-        
+
     }
-   
-    .text{
+
+    .text {
         display: flex;
         flex-direction: column;
         margin-left: 1.5rem;
 
-        h1{
+        h1 {
             margin-top: 4.5rem;
             color: #161A49;
             font-size: 4.4rem;
@@ -66,7 +66,7 @@ section {
             font-family: "Poppins", sans-serif;
         }
 
-        p{
+        p {
             color: #4B505A;
             font-size: 1.2rem;
             font-weight: 400;
@@ -74,8 +74,8 @@ section {
             margin: 2rem 0 3.5rem 0;
         }
 
-        button{
-        background-color: #ffffff;
+        button {
+            background-color: #ffffff;
             color: #6FBF44;
             border: none;
             font-size: 1.6rem;
@@ -84,7 +84,7 @@ section {
             text-align: center;
         }
 
-        button:hover{
+        button:hover {
             cursor: pointer;
             color: #ffffff;
             font-size: 1.6rem;
@@ -99,7 +99,99 @@ section {
 }
 
 @keyframes moverfoto {
-    from{
-       transform: translate(-4%, -4%) rotate(-4deg);
+    from {
+        transform: translate(-4%, -4%) rotate(-4deg);
     }
-   }
+}
+
+/* Para telas até 1024px (tablets em modo paisagem) */
+@media (max-width: 1024px) {
+    section {
+
+        div img {
+            width: 500px;
+        }
+
+        .text {
+            h1 {
+                margin-top: 0;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+}
+
+/* Para telas até 768px (tablets e smartphones grandes) */
+@media (max-width: 768px) {
+    section {
+
+        div img {
+            width: 350px;
+        }
+
+        .text {
+            h1 {
+                margin-top: 0;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            button {
+                text-align: start;
+            }
+        }
+    }
+}
+
+/* Para telas até 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    header{
+        a{
+            font-size: 0.8rem;
+        }
+
+        a:hover{
+            font-size: 1rem;
+        }
+
+        button{
+            font-size: 1rem;
+        }
+
+        button:hover{
+            font-size: 1.2rem;
+        }
+    }
+    section {
+        flex-direction: column;
+
+        div img {
+            width: 300px;
+        }
+
+        .text {
+            h1 {
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            button {
+                font-size: 1.5rem;
+                text-align: start;
+            }
+        }
+    }
+}
